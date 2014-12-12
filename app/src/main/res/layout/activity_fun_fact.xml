@@ -9,7 +9,7 @@
     <TextView android:text="Did you know?" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:textColor="#80ffffff" />
+        android:textColor="#80ffffff"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,6 +31,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@android:color/white"
-        android:textColor="#ff3afff8" />
+        android:textColor="#ff010404" />
 
 </RelativeLayout>
