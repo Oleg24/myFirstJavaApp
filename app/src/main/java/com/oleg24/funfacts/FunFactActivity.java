@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Random;
 
 public class FunFactActivity extends ActionBarActivity {
@@ -23,7 +25,7 @@ public class FunFactActivity extends ActionBarActivity {
 
         // Declare our view variables
         final TextView factLabel = (TextView) findViewById(R.id.FactTextView);
-        Button showFactButton = (Button) findViewById(R.id.showFactButton);
+        final Button showFactButton = (Button) findViewById(R.id.showFactButton);
 
         final RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
 
@@ -36,10 +38,13 @@ public class FunFactActivity extends ActionBarActivity {
                 int color = mColorWheel.getColor();
                 relativeLayout.setBackgroundColor(color);
                 factLabel.setText(fact);
+                showFactButton.setTextColor(color);
             }
         };
 
         showFactButton.setOnClickListener(listener);
+
+        Toast.makeText(this, "Welcome to the fun facts app", Toast.LENGTH_LONG).show();
     }
 
 
