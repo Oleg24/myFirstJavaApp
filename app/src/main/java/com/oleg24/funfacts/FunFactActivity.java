@@ -3,6 +3,7 @@ package com.oleg24.funfacts;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class FunFactActivity extends ActionBarActivity {
+
+    public static final String TAG = FunFactActivity.class.getSimpleName();
 
     private FactBook mFactBook = new FactBook();
     private ColorWheel mColorWheel = new ColorWheel();
@@ -45,6 +48,7 @@ public class FunFactActivity extends ActionBarActivity {
         showFactButton.setOnClickListener(listener);
 
         Toast.makeText(this, "Welcome to the fun facts app", Toast.LENGTH_LONG).show();
+        Log.d(TAG, "Logging from the on create method");
     }
 
 
