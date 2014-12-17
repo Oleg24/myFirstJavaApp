@@ -48,7 +48,7 @@ public class FunFactActivity extends ActionBarActivity {
         showFactButton.setOnClickListener(listener);
 
         Toast.makeText(this, "Welcome to the fun facts app", Toast.LENGTH_LONG).show();
-        Log.d(TAG, "Logging from the on create method");
+        Log.d(TAG, "Logging from the on create method. Wassup!");
     }
 
 
